@@ -13,9 +13,9 @@ def create_app(test_config=None):
     else:
         app.config.from_mapping(test_config)
 
-    @app.route('/hello')
+    @app.route('/status')
     def hello():
-        return 'Hello, World!'
+        return 'ok'
 
     # Main route and function
     @app.route('/api/v1/hello')

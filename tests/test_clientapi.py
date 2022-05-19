@@ -9,8 +9,8 @@ def test_config():
 
 
 def test_hello(client):
-    response = client.get('/hello')
-    assert response.data == b'Hello, World!'
+    response = client.get('/status')
+    assert response.data == b'ok'
 
 def test_clienthello( client):
     response = client.get('/api/v1/hello')

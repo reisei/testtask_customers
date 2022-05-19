@@ -6,3 +6,5 @@ COPY . /app
 
 RUN pip install -r requirements.txt && \
     pip install -e .
+
+CMD ["flask", "run", "--host=0.0.0.0", "--port=8080"]
